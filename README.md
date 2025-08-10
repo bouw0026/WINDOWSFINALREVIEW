@@ -94,17 +94,17 @@ graph LR
 Q20 – Shared Responsibility (IaaS focus)
 ```mermaid
 graph TD
-    subgraph Customer
-    OS[OS & Patch]
-    MW[Middleware/Runtime]
-    APP[Apps & Data]
-    end
-    subgraph Cloud Provider
-    NET[Networking]
-    VIRT[Virtualization]
-    HW[Servers/Storage]
-    end
-    Customer -->|IaaS| Cloud Provider
+    CUST_OS[OS & Patching]
+    CUST_MW[Middleware / Runtime]
+    CUST_APP[Applications & Data]
+    PROVIDER_NET[Networking]
+    PROVIDER_VIRT[Virtualization]
+    PROVIDER_HW[Physical Servers & Storage]
+
+    CUST_OS --> PROVIDER_NET
+    CUST_MW --> PROVIDER_VIRT
+    CUST_APP --> PROVIDER_HW
+
 ```
 Q39 – Scale-Out Trigger
 ```mermaid
