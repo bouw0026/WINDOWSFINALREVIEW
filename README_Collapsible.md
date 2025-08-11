@@ -87,7 +87,7 @@ Avoid over-provisioning; match SKU to need.
 graph LR
     Need[Workload Need] -->|Match| RightSKU[Right-size SKU]
     Need -->|Over| Premium[Premium SKU]
-    Premium -->|Not Saving| Cost up
+    Premium -->|Not Saving| HigherCost[Higher Cost]
 ```
 </details>
 
