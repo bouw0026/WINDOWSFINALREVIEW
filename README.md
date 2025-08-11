@@ -116,6 +116,7 @@ Final review – Azure fundamentals and related concepts
 This review answers the questions from the “Final Sample Questions” file using information from the Azure Fundamentals lectures, the Azure lecture deck and supporting course material. Each question is followed by its answer and an explanation of the underlying concept to help you connect the theory to the practical labs completed during the term.
 
 Cost management and pricing
+
 1 – Azure Reservations
 Answer: Azure Reservations (Azure Reserved VM Instances) give discounted prices when you commit to a one‑ or three‑year term of resource usage. By paying for the full term up front or with periodic payments, you lock in lower rates compared with pay‑as‑you‑go pricing. The Azure lecture notes explain that reserved instances are purchased in one‑ or three‑year terms and require payment for the full term. In practice, you would only buy reservations for workloads you know will run continuously for a long period (for example, domain controllers or database servers).
 
