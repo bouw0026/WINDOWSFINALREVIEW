@@ -59,59 +59,6 @@
 
 ---
 
-## B. Supplementary Diagrams (separate from table)
-
-### Q1 – Reservations (commitment → discount)
-
-```mermaid
-graph TD
-    A[Commitment Plan] -->|1-year| B[Discounted Rate]
-    A -->|3-year| C[Even Lower Rate]
-```
-
-Q8 – Resource Locks (protect prod resources)
-```mermaid
-graph LR
-    A[Production Database] --> B[Read-only Lock]
-    A --> C[Delete Lock]
-    B --> D[Prevents changes]
-    C --> E[Prevents deletion]
-```
-Q9 – Naming Enforcement with Azure Policy
-```mermaid
-graph TD
-    P[Azure Policy] --> C[Check Resource Name]
-    C -->|Compliant| AL[Allow]
-    C -->|Non-compliant| DN[Deny/Remediate]
-```
-Q15 – RBAC Role Examples
-```mermaid
-graph LR
-    RBAC[Azure RBAC] --> Owner
-    RBAC --> Contributor
-    RBAC --> Reader
-```
-Q20 – Shared Responsibility (IaaS focus)
-```mermaid
-graph TD
-    CUST_OS[OS & Patching]
-    CUST_MW[Middleware / Runtime]
-    CUST_APP[Applications & Data]
-    PROVIDER_NET[Networking]
-    PROVIDER_VIRT[Virtualization]
-    PROVIDER_HW[Physical Servers & Storage]
-
-    CUST_OS --> PROVIDER_NET
-    CUST_MW --> PROVIDER_VIRT
-    CUST_APP --> PROVIDER_HW
-
-```
-Q39 – Scale-Out Trigger
-```mermaid
-graph TD
-    L[Low Load] --> I1[1 Instance]
-    H[High Load] --> I2[Multiple Instances]
-```
 Final review – Azure fundamentals and related concepts
 This review answers the questions from the “Final Sample Questions” file using information from the Azure Fundamentals lectures, the Azure lecture deck and supporting course material. Each question is followed by its answer and an explanation of the underlying concept to help you connect the theory to the practical labs completed during the term.
 
